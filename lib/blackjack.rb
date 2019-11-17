@@ -55,7 +55,7 @@ end
 def runner
   welcome 
   initial_round { |total|
-  if total <= 21
+  while total <= 21
     hit?
     display_card_total
   end
