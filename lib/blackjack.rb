@@ -54,12 +54,11 @@ end
 
 def runner
   welcome 
-  initial_round { |total|
+  total = initial_round
   while total <= 21
     hit?
-    display_card_total
+    total = display_card_total
   end
 end_game
-}
 end
     
